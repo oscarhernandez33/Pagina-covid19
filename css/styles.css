@@ -1,0 +1,316 @@
+/*===== Estilos de la página =====*/
+
+/*=== Fuentes ===*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap');
+
+/*=== Estilos generales ===*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.margin-section{
+    margin: 0 30px;
+}
+
+/*=== Estilo del Header ===*/
+header{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.menu-container{
+    display: flex;
+}
+
+.menu-container > .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.menu-container > .logo-container > .Logo{
+    flex: 1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.menu-container > .logo-container > .Logo::after{
+    content: "Covid-19";
+}
+
+.menu-container > .menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.menu-container > .menu > li{
+    padding: 15px 30px 15px 0px;
+}
+
+.menu-container > .menu > li > a{
+    font-family: 'Roboto', sans-serif;
+    padding: 7px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+.menu-container > .menu > li > .first-child{
+    background: rgb(236, 68, 68);
+    border-radius: 10px;
+}
+
+.menu-container > .menu > li > a:hover{
+    background: rgb(201, 12, 12);
+}
+
+/*=== Estilos del banner ===*/
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(24, 23, 27);
+    display: flex;
+    color: wheat;
+}
+
+.banner-container > .img-banner{
+    width: 50%;
+    height: 100%;
+    background: url("../img/img-banner.jpg");
+    background-attachment: fixed;
+    background-position-y: center;
+    clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+}
+
+.banner-container > .title-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.texto-banner{
+    margin:  0 30px;
+}
+
+.banner-container > .title-container > .texto-banner h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: brown;
+}
+
+.banner-container > .title-container > .texto-banner p{
+    font-size: 1.5rem;
+}
+
+/*=== Estilos de la sección Introducción ===*/
+.section-introduccion{
+    margin-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.introduccion-container > .titulo-introduccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.introduccion-container > .titulo-introduccion > h3{
+    font-size: 2rem;
+}
+
+.introduccion-container > article{
+    margin-top: 50px;
+}
+
+.introduccion-container > article > p{
+    font-size: 1.3rem;
+}
+
+/*=== Separador entre contenido ===*/
+.separador-casos{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background: url("../img/img-separador.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.separador-casos > .container-casos{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.container-casos h4{
+    color: white;
+    font-size: 2.2rem;
+}
+
+.container-casos span{
+    color: rgb(230, 56, 56);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+/*=== Estilos preguntas de la página ===*/
+.section-preguntas{
+    margin-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.section-preguntas > .preguntas-container h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-preguntas > .preguntas-container > .parrafo-descripcion{
+    font-size: 1.3rem;
+}
+
+.preguntas-container > article{
+    margin: 30px 0;
+    border-radius: 0px;
+    padding: 22px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 11px -1px rgba(0,0,0,0.75);
+}
+
+.preguntas-container > article > .title-article h4{
+    padding-bottom: 17px;
+    font-size: 1.7rem;
+    color: rgb(18, 18, 138);
+}
+
+.preguntas-container > article > p{
+    padding-bottom: 13px;
+    font-size: 1.3rem;
+}
+
+.preguntas-container > article > img{
+    transform: translateX(50%);
+    width: 50%;
+}
+
+/*=== Sección de conclusión ===*/
+.section-conclusion{
+    margin-top: 50px;
+    background: rgb(173, 171, 171);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.conclusion-container > h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.conclusion-container > article > p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+/*=== Media Width ===*/
+@media (max-width:768px){
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-container > .img-banner, .banner-container > .title-container{
+        width: 100%;
+    }
+    .banner-container > .img-banner{
+        clip-path: none;
+    }   
+}
+
+@media (max-width: 507px){
+    .menu-container{
+        flex-direction: column;
+    }
+    .menu-container > .menu, .menu-container > .logo-container{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-container > .menu{
+        padding-right: 0;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu-container > .menu > li{
+        padding: 15px 0px;
+    }
+}
+
+/*=== Botón de ir hacia arriba ===*/
+.ir-arriba{
+    width: 45px;
+    height: 45px;
+    background: rgb(212, 33, 57);
+    border-radius: 50%;
+    box-shadow: 5px 2px 5px rgba(0,0,0,.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+}
+
+.ir-arriba:hover{
+    background: rgb(10, 201, 41);
+}
+
+.ir-arriba i{
+    color: white;
+    font-size: 20px;
+}
+
+/*=== Animaciones ===*/
+@keyframes animation-logo{
+    0%{
+        transform: translateY(100%);
+    }
+}
+@keyframes animation-banner{
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animation-menu{
+    0%{
+        transform: translateX(100%);
+    }
+}
